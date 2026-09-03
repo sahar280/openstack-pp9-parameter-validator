@@ -1,0 +1,20 @@
+<EXPECTED_NUAGE_VERSION>
+Nuage version is correct
+: ${CPUSET_ENABLE:=1}
+CPUSET enabled
+ovs-appctl (Open vSwitch) <EXPECTED_OVS_VERSION>
+Correct Ovs Version
+CPUAffinity=<SYSTEM_CPU_LIST>
+Correct CPU Affinity
+vcpu_pin_set = <VCPU_PIN_SET>
+Correct CPU set
+<OVS_AFFINITY_LIST>
+Correct affinity list
+Correct Fast Path parameters
+Correct DPVI polls
+is_connected: true
+Response is true
+BRIDGE_MTU=<EXPECTED_MTU>
+Correct MTU
+Permissive
+getenforce Permissive
