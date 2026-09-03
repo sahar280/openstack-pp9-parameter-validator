@@ -1,0 +1,16 @@
+name: Validate preserved script
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  redaction:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify required redaction placeholders
+        run: grep -q '<EXPECTED_NUAGE_VERSION>' pp9_compute_health_check.sh
